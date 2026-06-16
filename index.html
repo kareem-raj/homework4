@@ -1,0 +1,34 @@
+<!-- Copyright (c) by Kareem Rajeh
+Kareem_Rajeh@student.uml.edu
+ The purpose of the program is to create an interactive multiplication table that displays the correct
+ error messages, and works and used as intended to display multiplication tables -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Multiplication Table with Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--jQuery Validation Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+</head>
+<body>
+    <h1>Interactive Dynamic Table with Validation</h1>
+    <form id="tableForm">
+        <label for="minColumn">Min Column:</label>
+        <input type="number" id="minColumn" name="minColumn" required>
+        <label for="maxColumn">Max Column:</label>
+        <input type="number" id="maxColumn" name="maxColumn" required>
+        <label for="minRow">Min Row:</label>
+        <input type="number" id="minRow" name="minRow" required>
+        <label for="maxRow">Max Row:</label>
+        <input type="number" id="maxRow" name="maxRow" required>
+        <button type="submit">Generate Table</button>
+    </form>
+    <div id="errorMessage"></div>
+    <div id="tableContainer"></div>
+    <script src="main.js"></script>
+</body>
+</html>
